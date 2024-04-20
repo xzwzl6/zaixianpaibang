@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线排版工具</title>
+    <meta name="keywords" content="排版工具" />
+	<meta name="description" content="排版工具，可以帮助我们快速将文本一键排版、删除空格、添加空行以及统计字数。" />
+    <link href="bootstrap.min.css" rel="stylesheet">
+     <link href="css.css" rel="stylesheet">
+     <script src="paiban.js"></script>
+
+  </head>
+  <body>
+  <div class="container">
+  	<div class="row header"><p><img src="edit.png"></p><h1>在线排版工具</h1></div>
+<hr>
+  </div>
+<div class="container">
+
+<div class="row">
+  <div class="col-sm-12 col-md-12">
+    <div class="laobuluo_paiban">
+      <form method="POST" name="KKsForm">
+    <p><textarea name="Content" rows="20" cols="100%" id="thebody" class="t14" class="form-control"></textarea></p> 
+    <p><input onClick="paste('Content')" type="button" value="粘贴进来" name="Button" title="粘贴进来" class="btn btn-primary">
+    <input  type="button" value="一键排版"  name="body"  title="点此按钮开始一键自动排版" class="btn btn-primary" onClick="javascript:format()" >  
+    <input  type="button" value="删除空行"  name="body1" title="仅用于删除文章内多余空行及空格" class="btn btn-primary" onClick="javascript:format2()" >   
+    <font color="#008000">
+  <input class="btn btn-primary" title="自动段间空行自动排版" onClick="javascript:format3()" type="button" value="添加空行" name="body3" ></font> 
+    <input  type="button" value="文章字数统计" name="len" title="统计文本框内的文字个数" class="btn btn-primary" onClick="chklen()">
+    <input type="button" value="替换英文标点"  name="body4" onClick="javascript:format4()" class="btn btn-primary">
+    <input onClick="copy('Content')" type="button" value="复制文章" name="cmdok" title="复制已排版后的文本内容" class="btn btn-primary"> 
+    <input type="reset" value="清空内容" title="清空内容" name="cmdReset" class="btn btn-primary"></p>   
+    
+     </form>
+
+    </div>
+
+  </div> 
+  
+</div>
+<hr>
+<blockquote><p class="header">使用方法：将需要进行排版的文字贴进来，然后点击一键排版处理。</p></blockquote>
+
+</div>
+
+<div class="footer">
+  <div class="container"><p>&copy; 2024 <a href="https://211611411.github.io/xgwlrj">轩哥软件合集</a> &nbsp; </p> </div>
+</div>
+    <script src="bootstrap.js"></script>
+  </body>
+</html>
